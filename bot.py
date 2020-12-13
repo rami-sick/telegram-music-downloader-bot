@@ -8,14 +8,15 @@ from multiprocessing import Process
 from youtubesearchpython import SearchVideos
 
 
-bot = telepotpro.Bot("API_TOKEN")
+bot = telepotpro.Bot("1420162191:AAH2dY-RMIJD0R_6hGYMZ3PaGwAa7dikDLs")
 
 def startMsg(chat_id, first_name):
 	bot.sendMessage(chat_id, '🤖 Hello, '+ first_name +'!\n\n'
 	'📩 Send me:\n\n'
 	'"*/music* _song name_"  or\n'
 	'"*/music* _musician name - song name_"\n\n'
-	'to order some music. 🎶', parse_mode= 'Markdown')
+	'to order some music
+join To Our Offical Channel t.me/YTAudio_Channel. 🎶', parse_mode= 'Markdown')
 
 def errorMsg(chat_id, error_type):
 	if error_type == 'too_long':
@@ -87,8 +88,8 @@ def recebendoMsg(msg):
 	chat_type = msg['chat']['type']
 
 	if chat_type == 'group':
-		if '@TLMusicDownloader_bot' in userInput:
-			userInput = userInput.replace('@TLMusicDownloader_bot', '')
+		if '@YourMusicUploaderBot' in userInput:
+			userInput = userInput.replace('@YourMusicUploaderBot', '')
 
 	if userInput.startswith('/start'):
 		#Shows start dialog
