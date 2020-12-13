@@ -15,9 +15,8 @@ def startMsg(chat_id, first_name):
 	'📩 Send me:\n\n'
 	'"*/music* _song name_"  or\n'
 	'"*/music* _musician name - song name_"\n\n'
-	'to order some music
-join To Our Offical Channel t.me/YTAudio_Channel. 🎶', parse_mode= 'Markdown')
-
+	'to order some music 🎶', parse_mode= 'Markdown')
+        'JOIN OUR OFFICAL CHANNEL:T.me/YTAudio_Channel'.
 def errorMsg(chat_id, error_type):
 	if error_type == 'too_long':
 		bot.sendMessage(chat_id, '‼️ *Oops! Video too long to convert!*\n'
